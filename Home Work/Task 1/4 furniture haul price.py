@@ -16,4 +16,6 @@ total_cost=float(furniture_price+km_cost+floor_cost+tip_cost)
 print(f"Please pay {total_cost} ILS")
 
 #hi test
-test=1234
+test=1234#hi test
+test1=1234#hi test
+test2=1234
