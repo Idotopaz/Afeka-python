@@ -18,4 +18,4 @@ print(f"Please pay {total_cost} ILS")
 #hi test
 test=1234#hi test
 test1=1234#hi test
-test2=1234
+test2=1234w
