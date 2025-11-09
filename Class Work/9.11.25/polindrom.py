@@ -8,4 +8,5 @@ third_digit=num//10%10
 fourth_digit=num%10
 #print(fourth_digit)
 
-print(first_digit==fourth_digit and second_digit==third_digit and num%3 == 0)
+#check if num devides by 3 and is a polindrom
+print(first_digit==fourth_digit and second_digit==third_digit and num%3 == 0)   
