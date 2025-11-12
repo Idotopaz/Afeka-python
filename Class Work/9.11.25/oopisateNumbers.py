@@ -7,7 +7,7 @@ num1_dig2=num1//100%10
 
 num2=int(input("enter a 3 digit number: "))
 
-#num2=462 dig0-2
+#num2=462 dig0-4
 num2_dig0=num2//100%10  
 num2_dig1=num2//10%10
 num2_dig2=num2%10
