@@ -7,8 +7,10 @@ num_of_rooms = int(input("how many rooms do you have? "))
 
 if num_of_rooms >5:
     print("invalid input no apartments with more then 5 rooms")
+    exit()
 elif num_of_rooms<3:
     print("invalid input no apartments with less then 3 rooms")
+    exit()
 
 elif num_of_rooms == 3:
     price = three_room_apartment
