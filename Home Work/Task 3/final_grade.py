@@ -20,7 +20,7 @@ elif deliverd_task == 7 or deliverd_task == 8:
             final_grade = homework_average*0.2 + test_grade*0.8
             if test_grade > final_grade:
                 final_grade = test_grade
-    elif 55<=test_grade:
+    elif test_grade>=55:
         if test_grade<homework_average:
             final_grade = homework_average * 0.3 + test_grade*0.7
     else:

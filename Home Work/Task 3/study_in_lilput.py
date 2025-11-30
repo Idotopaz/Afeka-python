@@ -8,7 +8,7 @@ if B_average>=102:
 elif P_average>= 700:
     math_part = int(input("what is your math grade: "))
     english_part = int(input("what is your english grade: "))
-    if math_part>=145 and english_part>120:
+    if math_part>=145 and english_part>=120:
         A=True
 elif ((P_average*0.8)+(B_average/1.2))>=600:
     #print(((P_average*0.8)+(B_average/1.2)))

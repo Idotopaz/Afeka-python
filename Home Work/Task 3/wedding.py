@@ -17,13 +17,14 @@ else:
     else:
         print("invalid syntax")
         exit()
-    years_of_acquatintance = float(input("Enter years of acquainance: "))
+    years_of_acquaintance = float(input("Enter years of acquaintance: "))
     travel_time = int(input("Enter travel time in hours: "))
-    if years_of_acquatintance>3:
+    if years_of_acquaintance>3:
         sum+=years
     if travel_time>1:
         sum-=travel
 
-print(f"Recommnded gift amount: {sum} NIS")
+
+print(f"Recommended gift amount:  NIS"+str(sum))
 
 
