@@ -1,13 +1,11 @@
-num1=int(input("Enter a number: "))
-operator=input("Enter a operator: ")
-num2=int(input("Enter a number: "))
-
+num1, = int(input())
+operator = input()
+num2 = int(input())
 
 while operator == "+":
-    print(num1-num2,end="")
-    print(num1+num2,end="")
-    print(f" = {num1}+{num2}")
+    print(num1 - num2,end="")
+    print(num1 + num2)
 
-    num1 = int(input("Enter a number: "))
-    operator = input("Enter a operator: ")
-    num2 = int(input("Enter a number: "))
+    num1 = int(input())
+    operator = input()
+    num2 = int(input())

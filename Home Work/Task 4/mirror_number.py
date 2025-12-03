@@ -1,13 +1,14 @@
-num = int(input("input a whole number that is positive: "))
+num = int(input("Input a whole number that is positive: "))
 
-print_num=num
-new_num=0
-temp=0
+original = num
+reversed_num = 0
+multiplier = 1
 
-while num>0:
-    temp=num%10
-    new_num=(new_num*10)+temp #0*1+3=3,3*10+2=32,32*10+1=320+1=321
-    num//=10
+while num > 0: #123
+    reversed_num = (reversed_num * 10) + (num % 10) #0*10+3,3*10=30+2,32*=320+1==321
+    multiplier *= 10 #10,100,1000
+    num //= 10
 
-print(print_num,end="")
+new_num = original * multiplier + reversed_num #123*1000=123000+321=123321, 100*1000=100001
+
 print(new_num)
