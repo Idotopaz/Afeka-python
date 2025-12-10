@@ -6,7 +6,7 @@ tz//=10
 
 temp1=0
 total=0
-round_up=0
+
 counter_tz_length=0
 multiplier=0
 
@@ -33,10 +33,10 @@ while tz>0:
         multiplier = 1
     tz//=10
 
-round_up = ((total//10)*10)+10
-#print(f"={total}")
-#print(round_up-total)
-print(round_up-total==check_number)
+# print(total)
+expected_check = (10 - (total % 10)) % 10
+# print(total-expected_check)
+print(expected_check==check_number)
 
 
 
