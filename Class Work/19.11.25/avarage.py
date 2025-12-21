@@ -1,5 +1,5 @@
 sum = 0 
-counter = 0 
+counter = 0
 
 num=int(input("enter numbers , -1 to stop: "))
 while num != -1:

@@ -12,7 +12,7 @@ while num1>0:
     num2//=10
 # print(total)
 
-counter =0 
+counter =0
 temp_total=total
 while temp_total>0:
     counter+=1
