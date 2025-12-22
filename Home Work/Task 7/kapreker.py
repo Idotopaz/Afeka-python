@@ -6,7 +6,7 @@ def is_kaprekar1(num):
         counter+=1
         temp//=10
 
-    for i in range (1,counter+1):
+    for i in range (1,counter):
         if(num_squared//(10**i))+(num_squared%(10**i)) == num:
             num1=(num_squared%(10**i))
             num0=(num_squared//(10**i))
@@ -18,12 +18,19 @@ def is_kaprekar1(num):
 
 
 def is_kaprekar2(num):
+    num_squared = str(num ** 2)
+    for i in range(1, len(num_squared)):
+        if int((num_squared[-i:])) + int((num_squared[:-i])) == num:
+            return [int((num_squared[:-i])),int((num_squared[-i:])) ]
+
+    return [None]
 
 
 
 def main():
-    num=5292
+    num=7777
     print(is_kaprekar1(num))
+    print(is_kaprekar2(num))
 
 if __name__=="__main__":
     main()
