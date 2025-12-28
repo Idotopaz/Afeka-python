@@ -11,17 +11,17 @@ def is_kaprekar1(num):
             num1=(num_squared%(10**i))
             num0=(num_squared//(10**i))
             new_list=[num0,num1]
-            return new_list
+            return [new_list]
         else:
             new_list=[None]
     return new_list
 
 
 def is_kaprekar2(num):
-    num_squared = str(num ** 2)
+    num_squared = str(num ** 2) #6
     for i in range(1, len(num_squared)):
         if int((num_squared[-i:])) + int((num_squared[:-i])) == num:
-            return [int((num_squared[:-i])),int((num_squared[-i:])) ]
+            return [int((num_squared[:-i])),int((num_squared[-i:]))]
 
     return [None]
 
