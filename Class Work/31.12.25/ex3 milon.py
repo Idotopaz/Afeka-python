@@ -5,7 +5,6 @@ def count_divisors (num):
             counter+=1
     return counter
 
-
 def group_numbers_by_divisors (num):
 
     milon=dict()
@@ -29,11 +28,10 @@ def find_location_for_each_value(matrix):
             dic[matrix[i][j]].append((i,j))
     return dic
 
+matrix=[[1,2,3],
+        [4,1,6],
+        [2,8,1]
+        ]
 
-
-
-
-pretty_print_dictionary_with_lists(find_location_for_each_value([[1,2,3],
-                                                                 [4,1,6],
-                                                                 [2,8,1]
-                                                                 ]))
+print(find_location_for_each_value(matrix))
+pretty_print_dictionary_with_lists(find_location_for_each_value(matrix))
