@@ -33,5 +33,6 @@ matrix=[[1,2,3],
         [2,8,1]
         ]
 
+# pretty_print_dictionary_with_lists(group_numbers_by_divisors(12))
 print(find_location_for_each_value(matrix))
 pretty_print_dictionary_with_lists(find_location_for_each_value(matrix))
